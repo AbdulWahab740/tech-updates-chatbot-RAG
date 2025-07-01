@@ -15,9 +15,8 @@ from langchain_core.runnables import RunnableParallel, RunnablePassthrough, Runn
 from langchain_core.output_parsers import StrOutputParser
 import os
 import streamlit as st
+from app import GROK_API_KEY
 
-GROK_API_KEY = st.secrets("GROK_API_KEY")
-# GROK_API_KEY = os.getenv("GROK_API_KEY")
 embedding_function = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
 def fetch_articles_from_rss(rss_url: str, days_ago: int = 7):
