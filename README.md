@@ -21,12 +21,14 @@ Tech Ups Ai is an intelligent chatbot that answers questions based on the latest
 # 1. 🧠 Clone the Repository
 `
 git clone https://github.com/your-username/newsgpt.git
+`
+`
 cd newsgpt
 `
 # 2. 🐍 Create Environment & Install Requirements
-`python -m venv venv
-source venv/bin/activate   # or venv\Scripts\activate on Windows
-pip install -r requirements.txt`
+`python -m venv venv`
+`source venv/bin/activate   # or venv\Scripts\activate on Windows`
+`pip install -r requirements.txt`
 
 # 3. 🔐 Set Up Your .env File
 
