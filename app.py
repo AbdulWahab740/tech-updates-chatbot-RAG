@@ -14,4 +14,4 @@ question = st.text_input("Enter your question here:")
 if question:
     st.write(f"You asked: {question}")
     answer = answer_question(question)
-    st.write(f"Answer: {answer}")
+    st.write(f"{answer}")
