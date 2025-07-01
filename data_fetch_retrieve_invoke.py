@@ -8,15 +8,14 @@ from langchain.docstore.document import Document
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
-from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 from langchain_core.runnables import RunnableParallel, RunnablePassthrough, RunnableLambda
 from langchain_core.output_parsers import StrOutputParser
 import os
 import streamlit as st
-from app import GROK_API_KEY
 
+GROK_API_KEY = st.secrets["GROK_API_KEY"]
 embedding_function = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
 def fetch_articles_from_rss(rss_url: str, days_ago: int = 7):
@@ -163,7 +162,6 @@ def answer_question(question):
         today = datetime.datetime.now(datetime.timezone.utc).date()
         if (today - last_date).days > 7:
             st.success("Updating vectorstore with new tech news articles...")
-            # want to send a message to the user that the vectorstore is being updated
             documents = get_tech_news_documents(days_back=7)
             vectorstore.add_documents(documents)
             vectorstore.save_local("faiss_vectorstore")
