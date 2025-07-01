@@ -1,6 +1,6 @@
 # 📰 Tech Ups Ai — Your Tech News RAG Chatbot
 
-# (LIVE LINK 🔗 :- https://tech-ups-ai.streamlit.app/)
+**(LIVE LINK 🔗 :- https://tech-ups-ai.streamlit.app/)**
 ***(Note: I am using a free API key for this which may got expired I am sharing some working pics)***
 
 Tech Ups Ai is an intelligent chatbot that answers questions based on the latest tech news using Retrieval-Augmented Generation (RAG). It fetches news from top tech RSS feeds, stores them in a FAISS vector store, and responds using LLMs (Groq + Llama models).
