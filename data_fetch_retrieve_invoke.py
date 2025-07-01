@@ -160,7 +160,7 @@ def answer_question(question):
         ]
         last_date = max(all_dates) if all_dates else datetime.datetime.now(datetime.timezone.utc).date()
         today = datetime.datetime.now(datetime.timezone.utc).date()
-        if (today - last_date).days > 1:
+        if (today - last_date).days >= 1:
             st.success("Updating vectorstore with new tech news articles...")
             documents = get_tech_news_documents(days_back=3)
             vectorstore.add_documents(documents)
