@@ -1,5 +1,5 @@
 import streamlit as st
-from data_fetch_retrieve_invoke import get_tech_news_documents, answer_question
+from data_fetch_retrieve_invoke import  answer_question
 
 
 st.title("Tech News Updates GPT")
@@ -12,9 +12,8 @@ st.markdown(
 # Has to send the input to the data_fetch_vectorstore.ipynb file
 st.subheader("Ask a question about recent tech news:")
 question = st.text_input("Enter your question here:")
-
+GROK_API_KEY = st.secrets["GROK_API_KEY"]
 if question:
     st.write(f"You asked: {question}")
-
     answer = answer_question(question)
     st.write(f"Answer: {answer}")
