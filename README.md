@@ -3,7 +3,7 @@
 **(LIVE LINK 🔗 :- https://tech-ups-ai.streamlit.app/)**
 ***(Note: I am using a free API key for this which may got expired I am sharing some working pics)***
 
-![Alt](./demo_images/1.png)
+![Alt](./Demo_pics/1.png)
 *Other images are in the bottom*
 
 Tech Ups Ai is an intelligent chatbot that answers questions based on the latest tech news using Retrieval-Augmented Generation (RAG). It fetches news from top tech RSS feeds, stores them in a FAISS vector store, and responds using LLMs (Groq + Llama models).
@@ -76,6 +76,6 @@ Then open: **http://localhost:8501**
 🛡️ **Disclaimer**
 This is an educational, demo-level chatbot. Always verify information before taking action based on it.
 
-![Alt](./demo_images/2.png)
-![Alt](./demo_images/3.png)
+![Alt](./Demo_pics/2.png)
+![Alt](./Demo_pics/3.png)
 
