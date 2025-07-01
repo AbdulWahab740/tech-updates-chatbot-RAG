@@ -76,6 +76,6 @@ Then open: **http://localhost:8501**
 🛡️ **Disclaimer**
 This is an educational, demo-level chatbot. Always verify information before taking action based on it.
 
-![Alt](./Demo_pics/2.png)
+![Alt](./Demo_pics/2.PNG)
 ![Alt](./Demo_pics/3.png)
 
