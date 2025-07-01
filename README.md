@@ -5,17 +5,17 @@
 
 Tech Ups Ai is an intelligent chatbot that answers questions based on the latest tech news using Retrieval-Augmented Generation (RAG). It fetches news from top tech RSS feeds, stores them in a FAISS vector store, and responds using LLMs (Groq + Llama models).
 
-<br>
-## 🚀 Features
-🔍 Retrieves and chunks tech news articles with metadata (title, date, URL)
+# Features:
 
-🤖 Uses all-MiniLM-L6-v2 for embedding news content
+🔍 Retrieves and chunks tech news articles with metadata (title, date, URL).
 
-📦 Stores chunks in a local FAISS vector store
+🤖 Uses all-MiniLM-L6-v2 for embedding news content.
 
-🧠 Answers queries using Groq-hosted LLMs
+📦 Stores chunks in a local FAISS vector store.
 
-🖥️ Easy Streamlit interface to interact with the chatbot
+🧠 Answers queries using Groq-hosted LLMs.
+
+🖥️ Easy Streamlit interface to interact with the chatbot.
 
 ## ⚙️ Setup Instructions
 # 1. 🧠 Clone the Repository
