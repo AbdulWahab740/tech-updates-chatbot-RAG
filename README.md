@@ -18,39 +18,42 @@ Tech Ups Ai is an intelligent chatbot that answers questions based on the latest
 🖥️ Easy Streamlit interface to interact with the chatbot.
 
 ## ⚙️ Setup Instructions
-# 1. 🧠 Clone the Repository
+
+**1. 🧠 Clone the Repository**
 `
 git clone https://github.com/your-username/newsgpt.git
 `
 `
 cd newsgpt
 `
-# 2. 🐍 Create Environment & Install Requirements
+**2. 🐍 Create Environment & Install Requirements**
 `python -m venv venv`
 `source venv/bin/activate   # or venv\Scripts\activate on Windows`
 `pip install -r requirements.txt`
 
-# 3. 🔐 Set Up Your .env File
+**3. 🔐 Set Up Your .env File**
 
 Create a .env file and paste your Groq API key:
 
 `GROQ_API_KEY=your_groq_key_here`
 
-# 💬 Running the Chatbot
+**💬 Running the Chatbot**
 
 `streamlit run app.py`
 
 Then open: **http://localhost:8501**
 
-# 🔍 Example Sources Used
-**TechCrunch**
-**The Verge**
-**Ars Technica**
+**🔍 Example Sources Used**
 
-🧠 Models Used
-**all-MiniLM-L6-v2 for embeddings (via HuggingFace)**
 
-**deepseek-r1-distill-llama-70b via Groq LLMs (changeable)**
+*TechCrunch*
+*The Verge*
+*Ars Technica*
 
-🛡️ Disclaimer
+🧠 **Models Used**
+
+*all-MiniLM-L6-v2 for embeddings (via HuggingFace)*
+*deepseek-r1-distill-llama-70b via Groq LLMs (changeable)*
+
+🛡️ **Disclaimer**
 This is an educational, demo-level chatbot. Always verify information before taking action based on it.
