@@ -1,16 +1,15 @@
 import streamlit as st
 from data_fetch_retrieve_invoke import  answer_question
 
-
-st.title("Tech News Updates GPT")
+st.title("Tech Ups Ai")
 st.markdown(
     """
-    This is a simple NewsGPT application that allows you to ask questions about recent tech news.
+    **Welcome to Tech Ups AI**
+    An application that allows you to ask questions about recent tech news.
     The app uses a vector store to retrieve relevant articles and answer your questions.
     """
 )
-# Has to send the input to the data_fetch_vectorstore.ipynb file
-st.subheader("Ask a question about recent tech news:")
+st.subheader("Ask a question about any recent tech news:")
 question = st.text_input("Enter your question here:")
 GROK_API_KEY = st.secrets["GROK_API_KEY"]
 if question:
