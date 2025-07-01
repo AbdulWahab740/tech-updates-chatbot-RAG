@@ -3,6 +3,9 @@
 **(LIVE LINK 🔗 :- https://tech-ups-ai.streamlit.app/)**
 ***(Note: I am using a free API key for this which may got expired I am sharing some working pics)***
 
+![Alt](./demo_images/1.png)
+*Other images are in the bottom*
+
 Tech Ups Ai is an intelligent chatbot that answers questions based on the latest tech news using Retrieval-Augmented Generation (RAG). It fetches news from top tech RSS feeds, stores them in a FAISS vector store, and responds using LLMs (Groq + Llama models).
 
 # Features:
@@ -23,28 +26,43 @@ Tech Ups Ai is an intelligent chatbot that answers questions based on the latest
 `
 git clone https://github.com/your-username/newsgpt.git
 `
+<br>
 `
 cd newsgpt
 `
+<br>
 **2. 🐍 Create Environment & Install Requirements**
+
+<br>
+
 `python -m venv venv`
+
+<br>
+
 `source venv/bin/activate   # or venv\Scripts\activate on Windows`
+
+<br>
+
 `pip install -r requirements.txt`
 
 **3. 🔐 Set Up Your .env File**
 
 Create a .env file and paste your Groq API key:
 
+<br>
+
 `GROQ_API_KEY=your_groq_key_here`
 
 **💬 Running the Chatbot**
+
+<br>
 
 `streamlit run app.py`
 
 Then open: **http://localhost:8501**
 
 **🔍 Example Sources Used**
-
+<br>
 
 *TechCrunch*
 *The Verge*
@@ -57,3 +75,7 @@ Then open: **http://localhost:8501**
 
 🛡️ **Disclaimer**
 This is an educational, demo-level chatbot. Always verify information before taking action based on it.
+
+![Alt](./demo_images/2.png)
+![Alt](./demo_images/3.png)
+
