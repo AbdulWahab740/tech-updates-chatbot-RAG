@@ -11,7 +11,6 @@ st.markdown(
 )
 st.subheader("Ask a question about any recent tech news:")
 question = st.text_input("Enter your question here:")
-GROK_API_KEY = st.secrets["GROK_API_KEY"]
 if question:
     st.write(f"You asked: {question}")
     answer = answer_question(question)
