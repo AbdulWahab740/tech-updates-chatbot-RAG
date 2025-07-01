@@ -18,7 +18,7 @@ import streamlit as st
 GROK_API_KEY = st.secrets["GROK_API_KEY"]
 embedding_function = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
-def fetch_articles_from_rss(rss_url: str, days_ago: int = 7):
+def fetch_articles_from_rss(rss_url: str, days_ago):
     articles = []
     feed = feedparser.parse(rss_url)
     today = datetime.datetime.now(datetime.timezone.utc).date()
@@ -60,7 +60,7 @@ def extract_full_text_with_newspaper(article_url: str) -> str:
     except Exception:
         return ""
 
-def get_tech_news_documents(days_back: int = 7):
+def get_tech_news_documents(days_back):
     tech_rss_feeds = [
         "https://techcrunch.com/feed/",
         "https://www.theverge.com/rss/index.xml",
@@ -134,7 +134,7 @@ def setup_llm():
     return ChatGroq(
         model="deepseek-r1-distill-llama-70b",
         temperature=0.2,
-        max_tokens=2000,
+        max_tokens=5000,
         reasoning_format="parsed",
         timeout=None,
         max_retries=2,
@@ -160,9 +160,9 @@ def answer_question(question):
         ]
         last_date = max(all_dates) if all_dates else datetime.datetime.now(datetime.timezone.utc).date()
         today = datetime.datetime.now(datetime.timezone.utc).date()
-        if (today - last_date).days > 7:
+        if (today - last_date).days > 1:
             st.success("Updating vectorstore with new tech news articles...")
-            documents = get_tech_news_documents(days_back=7)
+            documents = get_tech_news_documents(days_back=3)
             vectorstore.add_documents(documents)
             vectorstore.save_local("faiss_vectorstore")
     
